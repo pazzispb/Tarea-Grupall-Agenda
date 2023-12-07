@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class AgendaTheme {
   static TextTheme lightTextTheme = TextTheme(
     titleLarge: GoogleFonts.lato( // Titulo
-      fontSize: 20,
+      fontSize: 25,
       fontWeight: FontWeight.bold,
       color: Colors.black,
     ),

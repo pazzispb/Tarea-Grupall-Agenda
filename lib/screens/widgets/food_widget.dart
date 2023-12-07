@@ -40,7 +40,7 @@ class FoodWidget extends StatelessWidget {
           child: SizedBox(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 //Icono de Cake
                 Icon(

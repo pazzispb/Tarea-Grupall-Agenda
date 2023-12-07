@@ -37,16 +37,16 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Text('My Birthday',
                       style: Theme.of(context).textTheme.titleLarge),
-                  const Divider(),
+                  const Divider(thickness: 0.09),
                   Text(
                     "It's going to be a great birthday. We are going out for dinner at my favorite place, then watch a movie after we go to the gelateria for ice cream and espresso.",
                     style: Theme.of(context).textTheme.bodyLarge,
                   ),
-                  const Divider(),
+                  const Divider(thickness: 0.09),
                   const WeatherWidget(), //Widget del clima
-                  const Divider(),
+                  const Divider(thickness: 0.09),
                   const GiftsWidget(), //Widget de los regalos
-                  const Divider(),
+                  const Divider(thickness: 0.09),
                   const FoodWidget() //Widget de las comidas
                 ],
               ),
