@@ -9,8 +9,8 @@ class FoodWidget extends StatelessWidget {
     return Row(
       children: [
         //Primera imagen de helado
-        Padding(
-          padding: const EdgeInsets.all(8.0),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
             backgroundImage: AssetImage('assets/images/ice_cream.jpeg'),
             maxRadius: 40,
@@ -18,8 +18,8 @@ class FoodWidget extends StatelessWidget {
         ),
 
         //Segunda imagen de Pizza
-        Padding(
-          padding: const EdgeInsets.all(8.0),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
             backgroundImage: AssetImage('assets/images/pizza.jpeg'),
             maxRadius: 40,
@@ -27,8 +27,8 @@ class FoodWidget extends StatelessWidget {
         ),
 
         //Tercera imagen de Soda
-        Padding(
-          padding: const EdgeInsets.all(8.0),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
           child: CircleAvatar(
             backgroundImage: AssetImage('assets/images/soda.jpeg'),
             maxRadius: 40,
@@ -36,32 +36,34 @@ class FoodWidget extends StatelessWidget {
         ),
 
         //SizedBox de iconos
-        SizedBox(
-          width: 100,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              //Icono de Cake
-              Icon(
-                Icons.cake,
-                size: 30,
-                color: AgendaTheme.lightTextTheme.labelSmall!.color,
-              ),
-
-              //Icono de Star
-              Icon(
-                Icons.star_border_outlined,
-                size: 30,
-                color: AgendaTheme.lightTextTheme.labelSmall!.color,
-              ),
-
-              //Icono de Music Note
-              Icon(
-                Icons.music_note,
-                size: 30,
-                color: AgendaTheme.lightTextTheme.labelSmall!.color,
-              ),
-            ],
+        Expanded(
+          child: SizedBox(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                //Icono de Cake
+                Icon(
+                  Icons.cake,
+                  size: 30,
+                  color: AgendaTheme.lightTextTheme.labelSmall!.color,
+                ),
+          
+                //Icono de Star
+                Icon(
+                  Icons.star_border_outlined,
+                  size: 30,
+                  color: AgendaTheme.lightTextTheme.labelSmall!.color,
+                ),
+          
+                //Icono de Music Note
+                Icon(
+                  Icons.music_note,
+                  size: 30,
+                  color: AgendaTheme.lightTextTheme.labelSmall!.color,
+                ),
+              ],
+            ),
           ),
         ),
       ],
