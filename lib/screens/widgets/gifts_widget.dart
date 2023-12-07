@@ -10,12 +10,12 @@ class GiftsWidget extends StatelessWidget {
       runSpacing: 5.0,
       children: [
         _giftChip("Gift 1"),
-        _giftChip("Gift 1"),
-        _giftChip("Gift 1"),
-        _giftChip("Gift 1"),
-        _giftChip("Gift 1"),
-        _giftChip("Gift 1"),
-        _giftChip("Gift 1"),
+        _giftChip("Gift 2"),
+        _giftChip("Gift 3"),
+        _giftChip("Gift 4"),
+        _giftChip("Gift 5"),
+        _giftChip("Gift 6"),
+        _giftChip("Gift 7"),
       ],
     );
   }
