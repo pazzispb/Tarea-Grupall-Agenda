@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:agenda/themes/agenda_theme.dart';
 
 class WeatherWidget extends StatelessWidget {
   const WeatherWidget({super.key});
@@ -8,29 +7,27 @@ class WeatherWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Column(
-          children: [
-            Icon(
-              Icons.sunny,
-              size: 25,
-              color: AgendaTheme.lightTextTheme.bodyMedium!.color,
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Icon(
+            Icons.sunny,
+            size: 25,
+            color: Theme.of(context).textTheme.bodyMedium!.color,
+          ),
         ),
-        SizedBox(width: 20),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               //mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text('81° Clear', style: AgendaTheme.lightTextTheme.bodyMedium)
+                Text('81° Clear', style: Theme.of(context).textTheme.bodyMedium)
               ],
             ),
             Row(
               children: [
                 Text('4500 San Alpho Drive, Dallas, TX United States',
-                    style: AgendaTheme.lightTextTheme.bodySmall)
+                    style: Theme.of(context).textTheme.bodySmall)
               ],
             ),
           ],
