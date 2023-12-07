@@ -27,10 +27,11 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const Placeholder(),
+            Image.asset('assets/images/gift_image.png',
+                fit: BoxFit.cover, width: double.infinity),
             SafeArea(
                 child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(12.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

@@ -1,3 +1,4 @@
+import 'package:agenda/themes/agenda_theme.dart';
 import 'package:flutter/material.dart';
 
 class GiftsWidget extends StatelessWidget {
@@ -22,7 +23,9 @@ class GiftsWidget extends StatelessWidget {
 
   Chip _giftChip(String chipText) {
     return Chip(
-        label: Text(chipText),
+        label: Text(chipText,
+            style: AgendaTheme.lightTextTheme.labelSmall
+        ),
         avatar: Icon(Icons.card_giftcard_rounded, color: Colors.blue.shade400, size: 20), 
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(4.0),
