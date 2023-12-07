@@ -13,14 +13,14 @@ class AgendaTheme {
       fontWeight: FontWeight.normal,
       color: const Color.fromARGB(255, 155, 154, 155),
     ),
-    bodyMedium: GoogleFonts.lato( // Accent
+    bodyMedium: GoogleFonts.openSans( // Accent
       fontSize: 14,
-      fontWeight: FontWeight.w200,
+      fontWeight: FontWeight.w500,
       color: const Color.fromARGB(255, 240, 109, 63),
     ),
     bodySmall: GoogleFonts.openSans( //Texto debajo del accent
       fontSize: 14,
-      fontWeight: FontWeight.w100,
+      fontWeight: FontWeight.w500,
       color: const Color.fromARGB(255, 179, 179, 179),
     )
   );
