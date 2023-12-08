@@ -9,29 +9,35 @@ class FoodWidget extends StatelessWidget {
     return Row(
       children: [
         //Primera imagen de helado
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: CircleAvatar(
-            backgroundImage: AssetImage('assets/images/ice_cream.jpeg'),
-            maxRadius: 40,
+        const Flexible(
+          child: Padding(
+            padding: EdgeInsets.all(8.0),
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/ice_cream.jpeg'),
+              maxRadius: 40,
+            ),
           ),
         ),
 
         //Segunda imagen de Pizza
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: CircleAvatar(
-            backgroundImage: AssetImage('assets/images/pizza.jpeg'),
-            maxRadius: 40,
+        const Flexible(
+          child: Padding(
+            padding: EdgeInsets.all(8.0),
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/pizza.jpeg'),
+              maxRadius: 40,
+            ),
           ),
         ),
 
         //Tercera imagen de Soda
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: CircleAvatar(
-            backgroundImage: AssetImage('assets/images/soda.jpeg'),
-            maxRadius: 40,
+        const Flexible(
+          child: Padding(
+            padding: EdgeInsets.all(8.0),
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/soda.jpeg'),
+              maxRadius: 40,
+            ),
           ),
         ),
 
