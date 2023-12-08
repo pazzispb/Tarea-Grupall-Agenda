@@ -9,35 +9,29 @@ class FoodWidget extends StatelessWidget {
     return Row(
       children: [
         //Primera imagen de helado
-        const Flexible(
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/images/ice_cream.jpeg'),
-              maxRadius: 40,
-            ),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage('assets/images/ice_cream.jpeg'),
+            maxRadius: 40,
           ),
         ),
 
         //Segunda imagen de Pizza
-        const Flexible(
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/images/pizza.jpeg'),
-              maxRadius: 40,
-            ),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage('assets/images/pizza.jpeg'),
+            maxRadius: 40,
           ),
         ),
 
         //Tercera imagen de Soda
-        const Flexible(
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/images/soda.jpeg'),
-              maxRadius: 40,
-            ),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: CircleAvatar(
+            backgroundImage: AssetImage('assets/images/soda.jpeg'),
+            maxRadius: 40,
           ),
         ),
 
@@ -46,7 +40,7 @@ class FoodWidget extends StatelessWidget {
           child: SizedBox(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 //Icono de Cake
                 Icon(
@@ -54,14 +48,14 @@ class FoodWidget extends StatelessWidget {
                   size: 30,
                   color: AgendaTheme.lightTextTheme.labelSmall!.color,
                 ),
-          
+
                 //Icono de Star
                 Icon(
                   Icons.star_border_outlined,
                   size: 30,
                   color: AgendaTheme.lightTextTheme.labelSmall!.color,
                 ),
-          
+
                 //Icono de Music Note
                 Icon(
                   Icons.music_note,
